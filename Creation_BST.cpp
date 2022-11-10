@@ -10,7 +10,7 @@ public:
       Node(int d){
         this->data=d;
         this->left=NULL;
-          this->right=NULL;
+        this->right=NULL;
       }
 };
 Node* InsertIntoBST(Node*root, int d){
