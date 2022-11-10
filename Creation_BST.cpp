@@ -1,6 +1,7 @@
 #include <iostream>
 #include <queue>
 using namespace std;
+//Worst case time complexity of insertion: O(N)
 class Node{
 public:
      int data;
@@ -18,12 +19,10 @@ Node* InsertIntoBST(Node*root, int d){
     root=new Node(d);
     return root;
   }
-  if(d> root->data){
+  if(d> root->data)
     root->right = InsertIntoBST(root->right,d);
-  }
-  else{
+  else
      root->left = InsertIntoBST(root->left,d);
-  }
   return root;
 }
 
@@ -34,12 +33,13 @@ void inorder(Node*root){
   cout<<root->data<<" ";
   inorder(root->right);
 }
+
 void TakeInput(Node* &root){
   int data;
   cin>>data;
 
   while(data!=-1){
-    root=InsertIntoBST(root, data);
+    root = InsertIntoBST(root, data);
     cin>>data;
   }
 }
@@ -47,6 +47,6 @@ int main() {
   Node* root=NULL;
   cout<<"Enter data into BST"<<endl;
   TakeInput(root);
-  cout<<"printing BST"<<endl;
+  cout<<"printing BST:"<<endl;
   inorder(root);
 }
