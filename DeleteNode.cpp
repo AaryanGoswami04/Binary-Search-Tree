@@ -28,7 +28,7 @@ int MinVal(TreeNode* root){  //finds the min value in the tree
                 return temp;
             }
             //2 children
-            if(root->left && root->right){   // Find the min value in the right subtree and replace the root's value by it. Then delete the node which contained min
+            if(root->left && root->right){   // Find the min value in the right subtree and replace the root's value by it. Then delete the node which contained min(OR find the max value in the right subtree))
                 int min = MinVal(root->right);
                 root->val = min;
                 root->right = deleteNode(root->right, min);
@@ -45,6 +45,3 @@ int MinVal(TreeNode* root){  //finds the min value in the tree
          return root;
     }
 };
-int main() {
-  std::cout << "Hello World!\n";
-}
