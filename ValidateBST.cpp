@@ -19,6 +19,3 @@
         return solve(root, lowest, highest);
     }
 };
-int main() {
-  std::cout << "Hello World!\n";
-}
