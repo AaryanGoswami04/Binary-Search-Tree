@@ -1,4 +1,5 @@
 #include <iostream>
+//Kth largest element = (K-N+1)th smallest element
 int solve(TreeNode* root,int &i, int k){
     //base case
     if(!root)
@@ -17,12 +18,8 @@ int solve(TreeNode* root,int &i, int k){
     //Right subtree
     return solve(root->right, i, k);
 }
-
     int kthSmallest(TreeNode* root, int k) {
     int i=0;
     int ans = solve(root, i, k);
     return ans;
     }
-int main() {
-  std::cout << "Hello World!\n";
-}
