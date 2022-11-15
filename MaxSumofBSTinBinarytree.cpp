@@ -1,5 +1,6 @@
 #include <iostream>
 public:
+//Given a binary tree root, return the maximum sum of all keys of any sub-tree which is also a Binary Search Tree (BST).
 //Time complexity:O(N)
    class info{
     public:
@@ -42,6 +43,3 @@ public:
         return max_sum;
     }
 };
-int main() {
-  std::cout << "Hello World!\n";
-}
