@@ -1,4 +1,5 @@
 #include <iostream>
+//You are given the root of a binary search tree (BST), where the values of exactly two nodes of the tree were swapped by mistake. Recover the tree without changing its structure.
 class Solution {
     //Time complexity:O(N), Space complexity:O(N)
 private:
@@ -38,6 +39,3 @@ public:
     }
 };
 //https://www.youtube.com/watch?v=ZWGW7FminDM&t=819s
-int main() {
-  std::cout << "Hello World!\n";
-}
